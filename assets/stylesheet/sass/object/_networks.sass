@@ -1,0 +1,12 @@
+.o-social-networks
+    @include display-flex
+    text-align: center
+    & > *
+        @include transition("transform .2s linear")
+        display: inline-block
+        font-size: 2rem
+        width: 100%
+        &:last-child
+            margin-right: 0
+        &:hover
+            @include transform("scale(1.5)")

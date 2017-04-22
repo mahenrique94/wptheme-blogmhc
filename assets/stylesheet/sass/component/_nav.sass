@@ -1,0 +1,47 @@
+.c-nav-cattegory
+    @extend %float-full
+    background: $background
+    box-shadow: $box-shadow
+    padding: $padding
+    z-index: 1001
+    &__brand
+        color: $color-primary
+        font :
+            size: 2rem
+            weight: bold
+    &__menu
+        float: right
+    &__item--first
+        @media screen and (min-width: $media-querie-mobile)
+            margin-bottom: .5rem
+        @media screen and (min-width: $media-querie-tablet)
+            margin-bottom: .5rem
+        @media screen and (min-width: $media-querie-desktop)
+            margin-bottom: 0
+        @media screen and (min-width: $media-querie-screen)
+            margin-bottom: 0
+        float: left
+        margin-right: 1rem
+        text-transform: uppercase
+        a
+            @include transition("transform .25s cubic-bezier(0, .5, .8, 0)")
+            color: #FFFFFF
+            display: inline-block
+            padding: .5rem
+        &:hover
+            @include transform("translateY(-5px)")
+        &:last-child
+            margin-right: 0                    
+
+.c-nav-blog
+    &__item
+        @extend %font-thin
+        a
+            @include transition("padding .2s linear")
+            display: block
+            padding: .5rem 0
+            &:hover
+                padding-left: 1rem
+                text-decoration: underline
+        &:first-child
+            @extend %title-sidebar

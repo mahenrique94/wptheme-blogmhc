@@ -1,0 +1,22 @@
+.o-tag
+    background: #DDDDDD
+    color: #FFFFFF
+    display: inline-block
+    font-weight: 100
+    letter-spacing: 2px
+    margin: .2rem
+    margin-left: 1rem
+    padding: .3rem
+    padding-left: .8rem
+    position: relative
+    &:hover, &:hover::before
+        background: #808080
+    &::before
+        @include transform("rotate(45deg)")
+        background: #DDDDDD
+        content: ''
+        height: 20px
+        position: absolute
+        left: -11px
+        top: 4px
+        width: 20px        

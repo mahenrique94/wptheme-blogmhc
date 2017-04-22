@@ -1,0 +1,29 @@
+.o-header
+    &--post
+        margin-top: 100px
+    &__image
+        @include align-items("center")
+        @include display-flex
+        @include justify-content("center")
+        height: 300px
+    &__info
+        @include border-radius("5px")
+        background: rgba(0, 0, 0, .5)
+        padding: 4rem 5rem
+    &__title, &__author, &__date
+        color: #F2F2F2
+        display: block
+        font : 
+            size: 1.5rem
+            weight: 100
+        letter-spacing: 2px
+    &__title a
+        color: #F2F2F2
+        font : 
+            size: 2rem
+            weight: 500
+    &__author a
+        color: #F2F2F2
+        font : 
+            size: 1.7rem
+            weight: 500

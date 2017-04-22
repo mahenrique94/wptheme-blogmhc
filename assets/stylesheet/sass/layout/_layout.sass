@@ -1,0 +1,40 @@
+.l-background--blog
+    background: url(../img/background.jpg)
+
+.l-blog
+    font :
+        weight: bold
+    position: absolute    
+    &.is-left
+        @include transform("rotate(-90deg)")
+        font-size: 1.5rem
+        left: -41px
+        top: 5px
+    &.is-top
+        top: -13px        
+
+.l-blog-brand
+    float: left
+    position: relative
+
+.l-container
+    @extend %float-full
+    padding: $padding
+    padding-top: 9rem
+    &--visualize
+        padding-top: 3rem
+
+.l-grid-content
+    @media screen and (min-width: $media-querie-mobile)
+        width: 100%
+    @media screen and (min-width: $media-querie-tablet)
+        width: 100%
+    @media screen and (min-width: $media-querie-desktop)
+        @include calc(width, "70% - 5rem")
+    @media screen and (min-width: $media-querie-screen)
+        @include calc(width, "70% - 5rem")    
+    float: left
+
+.l-grid-aux
+    float: right
+    width: 30%

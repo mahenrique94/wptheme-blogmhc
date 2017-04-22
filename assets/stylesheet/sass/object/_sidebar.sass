@@ -1,0 +1,18 @@
+.o-sidebar
+    @extend .o-box
+    @media screen and (min-width: $media-querie-mobile)
+        display: none
+    @media screen and (min-width: $media-querie-tablet)
+        display: none
+    @media screen and (min-width: $media-querie-desktop)
+        display: block
+    @media screen and (min-width: $media-querie-screen)
+        display: block
+    &__title
+        @extend %title-sidebar
+        display: block
+    &__describe
+        color: $color-text
+        font-weight: 100        
+    &__tag
+        @extend .o-tag

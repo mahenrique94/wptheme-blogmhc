@@ -1,0 +1,66 @@
+/*
+Theme Name: MHC - Blog
+Theme URI: 
+Author: Matheus Castiglioni
+Author URI: http://www.matheuscastiglioni.com.br
+Description: Tema desenvolvido para meu blog pessoal.
+Version: 1.0
+Tags: blog, azul, branco, duas colunas, moderno
+Text Domain: mhc-blog
+*/
+.o-icon--facebook {
+    color: #3399FF;
+}
+.o-icon--github {
+    color: #CC66FF;
+}
+.o-icon--googleplus {
+    color: #FF3333;
+}
+.o-icon--instagram {
+    color: #999966;
+}
+.o-icon--linkedin {
+    color: #0066CC;
+}
+.o-icon--twitter {
+    color: #33CCFF;
+}
+
+.o-category--android {
+    background: #00CC99;
+    color: #FFFFFF;
+}
+.o-category--bancodedados {
+    background: #DCDCDC;
+    color: #FFFFFF;
+}
+.o-category--css {
+    background: #0099FF;
+    color: #FFFFFF;
+}
+.o-category--diversos {
+    background: #595959;
+    color: #FFFFFF;
+}
+.o-category--html {
+    background: #FF9900;
+    color: #FFFFFF;
+}
+.o-category--linux {
+    background: #0000FF;
+    color: #FFFFFF;
+}
+.o-category--java {
+    background: #FF8080;
+    color: #FFFFFF;
+}
+.o-category--javascript {
+    background: #E6E600;
+    color: #FFFFFF;
+}
+
+.o-footer {
+    display: flex;
+    justify-content: space-between;
+}

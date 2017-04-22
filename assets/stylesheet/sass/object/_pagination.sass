@@ -1,0 +1,28 @@
+.o-pagination
+    @extend %float-full
+    background: $background
+    box-shadow: $box-shadow
+    padding: 1rem
+    &__pages
+        display: inline-block
+    &__page
+        border: $border 
+        display: inline-block
+        margin-right: 1rem
+        @media screen and (min-width: $media-querie-mobile)
+            margin-bottom: .5rem
+        @media screen and (min-width: $media-querie-tablet)
+            margin-bottom: .5rem
+        @media screen and (min-width: $media-querie-desktop)
+            margin-bottom: 0
+        @media screen and (min-width: $media-querie-screen)
+            margin-bottom: 0
+        a
+            @include transition("all .2s linear")
+            display: block                        
+            padding: .5rem 1.5rem
+        &:hover a, &.is-active a
+            background: $color-primary
+            color: #FFFFFF
+        &:last-child
+            margin-right: 0

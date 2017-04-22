@@ -1,0 +1,33 @@
+.o-footer
+    @extend %float-full
+    background: $background
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, .3)
+    padding: $padding
+    .c-nav-blog
+        @media screen and (min-width: $media-querie-mobile)
+            margin-bottom: 1rem
+            width: 100%
+        @media screen and (min-width: $media-querie-tablet)
+            margin-bottom: 1rem
+            width: 100%
+        @media screen and (min-width: $media-querie-desktop)
+            margin-bottom: 0
+            width: initial
+        @media screen and (min-width: $media-querie-screen)
+            margin-bottom: 0
+            width: initial
+        float: left
+        margin-right: 5rem
+    .o-newsletter
+        @media screen and (min-width: $media-querie-mobile)
+            float: left
+            width: 100%
+        @media screen and (min-width: $media-querie-tablet)
+            float: left
+            width: 100%
+        @media screen and (min-width: $media-querie-desktop)
+            float: right
+            width: 20%
+        @media screen and (min-width: $media-querie-screen)
+            float: right
+            width: 20%

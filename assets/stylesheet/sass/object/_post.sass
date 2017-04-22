@@ -1,0 +1,123 @@
+.o-post    
+    @extend .o-box
+    @extend %float-full        
+    &__title
+        @extend %float-full
+        font :
+            size: 1.5rem
+            weight: bold
+        margin-bottom: .25rem
+        a
+            &:hover
+                @extend %text-underline
+    &__date
+        @extend %float-full
+        @extend %font-thin
+    &__author
+        @extend %float-full
+        @extend %font-thin
+        strong a
+            color: $color-primary
+            letter-spacing: 1px
+            &:hover
+                @extend %text-underline
+    &__image
+        @extend %float-full
+        @extend %margin-separate
+        background: $background-no-image
+        height: 300px
+    &__content
+        @extend %font-thin
+        float: left
+    &__btn--keep-reading
+        @extend %float-full
+        @extend %margin-separate
+        @include transition("all .2s ease-in-out")
+        background: $color-primary
+        border: 2px solid #FFFFFF
+        box-shadow: 0 0 5px rgba(0, 0, 0, .3)
+        color: #FFFFFF
+        padding: 1rem
+        text :
+            align : center
+            transform : uppercase
+        &:hover
+            background: #FFFFFF
+            border-color: $color-primary
+            color: $color-primary
+    &__tag
+        @extend .o-tag
+    &__footer
+        @extend %float-full
+    &__share
+        color: $color-text
+        font-size: 1.5rem
+        text-align: center
+        &--options
+            @include display-flex
+            @include justify-content("space-around")
+            font-size: 1.5rem
+            margin-top: 2rem
+            li
+                @include transition("all .2s linear")
+                a
+                    color: $color-primary
+                &:hover
+                    @include transform("scale(2)")
+
+.o-post--visualize
+    .o-post__content
+        float: initial
+        h1, h2, h3, h4, h5, h6
+            font-weight: 500
+            margin-bottom: 1rem
+        p
+            @extend %float-full
+            line-height: 1.2
+            margin-bottom: 1.5rem
+            text-align: justify
+            a
+                background: lighten($color-link, 20%) 
+                color: $color-link
+                font-weight: bold
+                padding: $padding-mark
+            strong
+                background: lighten($color-strong, 45%) 
+                color: $color-strong
+                padding: $padding-mark
+            &:last-child
+                margin-bottom: 0
+        blockquote
+            float: left
+            padding: 1rem
+            position: relative
+            p
+                color: #595959
+                font : 
+                    family: Georgia, Times, serif !important
+                    size: 1.2rem
+                position: relative
+            p[style]
+                color: #808080
+                font-size: 1rem
+            &::before
+                color: #F8F8F8
+                content: '\f10d'
+                font : 
+                    family: Stilize
+                    size: 6rem
+                position: absolute
+                transform: rotate(-15deg)        
+        pre[class*="language-"]
+            font : 
+                family: 'Source Code Pro', monospace !important
+                weight: 300 
+            letter-spacing: 1px
+            margin: 0 0 1.5rem 0
+            tab-size: 10
+            &:last-child
+                margin-bottom: 0
+    .o-post__footer
+        border-top: $border
+        margin-top: 2rem
+        padding: 1rem 0
