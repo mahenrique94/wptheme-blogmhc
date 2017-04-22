@@ -59,8 +59,3 @@ Text Domain: mhc-blog
     background: #E6E600;
     color: #FFFFFF;
 }
-
-.o-footer {
-    display: flex;
-    justify-content: space-between;
-}

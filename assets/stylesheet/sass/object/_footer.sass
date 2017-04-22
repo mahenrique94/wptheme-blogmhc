@@ -1,5 +1,15 @@
 .o-footer
+    @media screen and (min-width: $media-querie-mobile)
+        flex-direction: column
+    @media screen and (min-width: $media-querie-tablet)
+        flex-direction: column
+    @media screen and (min-width: $media-querie-desktop)
+        flex-direction: row
+    @media screen and (min-width: $media-querie-screen)
+        flex-direction: row        
     @extend %float-full
+    display: flex
+    justify-content: space-between
     background: $background
     box-shadow: 0 -2px 5px rgba(0, 0, 0, .3)
     padding: $padding

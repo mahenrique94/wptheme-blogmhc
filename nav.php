@@ -1,4 +1,4 @@
-<nav class="c-nav-cattegory is-fixed" role="navigation">
+<nav class="c-nav-cattegory" role="navigation">
 	<span class="l-blog-brand">
 		<span class="l-blog is-left is-uppercase">blog</span>
 		<span class="l-blog is-top">do</span>        
