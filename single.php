@@ -36,6 +36,7 @@
             </ul>
         </fieldset>
     </div>
+    <div class="o-box o-box--comment"><?php include("comments.php");?></div>
 </section>
 <?php
         }
