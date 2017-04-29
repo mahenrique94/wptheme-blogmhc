@@ -9,7 +9,7 @@
             $categories = get_categories(array("hide_empty" => 0));
             foreach ($categories as $category) :
         ?>
-		<li class="c-nav-cattegory__item--first" role="menuitem"><a class="o-category--<?=str_replace(" ", "", strtolower($category->name));?>" href="<?=get_category_link($category->term_id);?>" role="link"><?=$category->name;?></a>
+		<li class="c-nav-cattegory__item--first" role="menuitem"><a class="o-cattegory--<?=str_replace(" ", "", strtolower($category->name));?>" href="<?=get_category_link($category->term_id);?>" role="link"><?=$category->name;?></a>
         <?php
             endforeach
         ?>

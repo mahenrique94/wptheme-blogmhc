@@ -27,35 +27,39 @@ Text Domain: mhc-blog
     color: #33CCFF;
 }
 
-.o-category--android {
+.o-cattegory--android {
     background: #00CC99;
     color: #FFFFFF;
 }
-.o-category--bancodedados {
+.o-cattegory--bancodedados {
     background: #DCDCDC;
     color: #FFFFFF;
 }
-.o-category--css {
+.o-cattegory--css {
     background: #0099FF;
     color: #FFFFFF;
 }
-.o-category--diversos {
+.o-cattegory--diversos {
     background: #595959;
     color: #FFFFFF;
 }
-.o-category--html {
+.o-cattegory--html {
     background: #FF9900;
     color: #FFFFFF;
 }
-.o-category--linux {
+.o-cattegory--linux {
     background: #0000FF;
     color: #FFFFFF;
 }
-.o-category--java {
+.o-cattegory--java {
     background: #FF8080;
     color: #FFFFFF;
 }
-.o-category--javascript {
+.o-cattegory--javascript {
     background: #E6E600;
     color: #FFFFFF;
+}
+.o-cattegory--php {
+   background: #9933FF;
+   color: #FFFFFF;
 }

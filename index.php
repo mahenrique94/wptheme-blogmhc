@@ -14,7 +14,7 @@
 				</header>
                 <div class="o-post__image" style="background: url(<?=the_post_thumbnail_url();?>) no-repeat center;"></div>
 				<div class="is-clean o-post__content">
-					<?=the_content();?>
+					<?=the_excerpt();?>
 				</div>
 				<a class="o-post__btn--keep-reading" href="<?=the_permalink();?>" role="link">Continuar lendo</a>
 				<footer class="o-post__footer">
