@@ -8,7 +8,7 @@
     <div class="o-header__image" style="background-image: url(<?=the_post_thumbnail_url();?>);">
         <div class="o-header__info">
             <label class="o-header__title"><a href="<?=the_permalink();?>" role="link"><?=the_title();?></a></label>
-            <label class="o-header__author">por <strong><a href="<?=get_author_posts_url(get_the_author_meta("ID"), get_the_author_meta("user_nicename"));?>" role="link"><?=get_the_author();?></a></strong> em <span class="is-bold"><a class="o-category--<?php $categories = get_the_category();$category = $categories[0]->cat_name;echo str_replace(" ", "", strtolower($category));?>" href="<?php $categories = get_the_category();$category = $categories[0]->term_id;echo get_category_link($category);?>" role="link" style="padding: 0 .2rem;"><?php $categories = get_the_category();$category = $categories[0]->cat_name;echo $category;?></a></span></label>
+            <label class="o-header__author">por <strong><a href="<?=get_author_posts_url(get_the_author_meta("ID"), get_the_author_meta("user_nicename"));?>" role="link"><?=get_the_author();?></a></strong> em <span class="is-bold"><a class="o-cattegory--<?php $categories = get_the_category();$category = $categories[0]->cat_name;echo str_replace(" ", "", strtolower($category));?>" href="<?php $categories = get_the_category();$category = $categories[0]->term_id;echo get_category_link($category);?>" role="link" style="padding: 0 .2rem;"><?php $categories = get_the_category();$category = $categories[0]->cat_name;echo $category;?></a></span></label>
             <label class="o-header__date"><?=the_date("\\P\\o\\s\\t\\a\\d\\o \\e\\m d \\d\\e F \\d\\e Y \\á\\s H:i");?></label>
         </div>
     </div>				
