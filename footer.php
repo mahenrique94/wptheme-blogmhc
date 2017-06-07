@@ -41,6 +41,7 @@
 			<li class="c-nav-blog__item"><a href="http://mhc.matheuscastiglioni.com.br" role="link" target="_blank">MHC</a></li>
 		</ul>
 	</footer>
+    <?php wp_footer();?>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
